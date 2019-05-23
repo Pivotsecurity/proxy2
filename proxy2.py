@@ -20,7 +20,7 @@ from HTMLParser import HTMLParser
 
 
 def with_color(c, s):
-    return "\x1b[%dm%s\x1b[0m" % (c, s)
+    return (s)
 
 def join_with_script_dir(path):
     return os.path.join(os.path.dirname(os.path.abspath(__file__)), path)
