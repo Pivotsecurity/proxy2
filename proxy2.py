@@ -378,7 +378,7 @@ def test(HandlerClass=ProxyRequestHandler, ServerClass=ThreadingHTTPServer, prot
     httpd = ServerClass(server_address, HandlerClass)
 
     sa = httpd.socket.getsockname()
-    print "Serving HTTP Proxy on", sa[0], "port", sa[1], "..."
+    print ("Serving HTTP Proxy on", sa[0], "port", sa[1], "...")
     httpd.serve_forever()
 
 
